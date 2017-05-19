@@ -1,0 +1,21 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "This is a first online market in Ecuador",
+  "main": "server.js",
+  "scripts": {
+    "start": " nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Carlos Hinojosa",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "ejs-mate": "^2.3.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.9.8",
+    "morgan": "^1.8.1"
+  }
+}
