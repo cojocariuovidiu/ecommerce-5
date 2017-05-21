@@ -1,10 +1,19 @@
 var router = require('express').Router();
 var User = require('../models/user');
+var bodyParser = require('body-parser');
 
-router.get('/signup')
+//Middleware
+
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: false }));
+
+
+router.get('/signup', function(req, res, next){
+    res.render(accounts/signup);
+});
 
 router.post('/signup', function(req, res, next){
-    var user = new user();
+    var user = new User();
 
     user.profile.name = req.body.name;    
     user.password = req.body.password;
